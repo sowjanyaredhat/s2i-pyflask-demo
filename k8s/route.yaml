@@ -3,11 +3,11 @@ kind: Route
 metadata:
   labels:
     app: vote-ui
-  name: service-ui
+  name: vote-ui
 spec:
   port:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: service-ui
+    name: vote-ui
     weight: 100
