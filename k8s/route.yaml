@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: vote-ui
+  name: service-ui
+spec:
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: service-ui
+    weight: 100
