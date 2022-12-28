@@ -4,7 +4,7 @@ kind: Service
 metadata:
   labels:
     app: vote-ui
-   name: service-ui
+   name: vote-ui
 spec:
   type: NodePort
   ports:
