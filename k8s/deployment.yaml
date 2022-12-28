@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: vote-ui
+   name: service-ui
 spec:
   replicas: 1
   selector:
