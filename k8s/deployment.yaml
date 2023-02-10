@@ -23,3 +23,11 @@ spec:
               protocol: TCP
             - containerPort: 9090
               protocol: TCP
+          volumeMounts:
+          - name: tls-cert
+            mountPath: /cert
+            readOnly: true
+      volumes:
+      - name: tls-cert
+        secret:
+          secretName: argosec
